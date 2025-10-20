@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online C++ Compiler</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/eclipse.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Online C++ Compiler</h1>
+    <button id="theme-toggle">🌙 Dark</button>
+  </div>
+
+  <div class="container">
+    <div class="editor-section">
+      <select id="language">
+        <option selected>C++</option>
+      </select>
+      <textarea id="editor"></textarea>
+    </div>
+
+    <div class="io-section">
+      <div class="io-card">
+        <h3>Input</h3>
+        <textarea id="input" placeholder="Enter your input here..."></textarea>
+        <button id="run-btn">Run ▶</button>
+      </div>
+      <div class="io-card">
+        <h3>Output</h3>
+        <pre id="output"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/clike/clike.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
